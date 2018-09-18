@@ -12,16 +12,18 @@ public class Question {
     private int correctAnswer = 0;
 
     public void generateQuestion() {
-        addends = new int[] { random.nextInt(100), random.nextInt(100) };
+        int min = 5;
+        int max = 100;
+        addends = new int[] { random.nextInt(max + 1 - min) + min, random.nextInt(max + 1 - min) + min };
         correctAnswer = addends[0] + addends[1];
         answers.set(0, correctAnswer);
-        answers.set(1, correctAnswer - random.nextInt(14));
-        answers.set(2, correctAnswer + random.nextInt(12));
+        answers.set(1, correctAnswer - random.nextInt(14 + 1 - min) + min);
+        answers.set(2, correctAnswer + random.nextInt(12 + 1 - min) + min);
         Collections.shuffle(answers);
     }
 
     public String getQuestion() {
-        return "What is " + addends[0] + " + " + addends[1] + "?";
+        return addends[0] + " + " + addends[1] + "?";
     }
 
     public ArrayList<Integer> getAnswers() {
