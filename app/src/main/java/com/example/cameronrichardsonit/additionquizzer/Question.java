@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 
-public class Question {
+class Question {
     private final Random random = new Random();
-    private ArrayList<Integer> answers = new ArrayList<>(Arrays.asList( new Integer[3]));
+    private final ArrayList<Integer> answers = new ArrayList<>(Arrays.asList( new Integer[3]));
     private int[] addends = new int[2];
     private int correctAnswer = 0;
 

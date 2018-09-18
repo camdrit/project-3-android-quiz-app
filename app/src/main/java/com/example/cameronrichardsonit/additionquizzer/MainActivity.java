@@ -11,11 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    public final String TAG = MainActivity.class.getSimpleName();
 
     private TextView questionPrompt;
     private RadioGroup answerButtons;
@@ -76,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void checkAnswer() {
-        Button selectedAnswerButton = getSelectedRadioButton(answerButtons);
+        Button selectedAnswerButton = getSelectedRadioButton();
         int selectedAnswer = Integer.parseInt(selectedAnswerButton.getText().toString());
         if (selectedAnswer == question.getCorrectAnswer()) {
             Toast.makeText(this, "Good job! That's correct!", Toast.LENGTH_LONG).show();
@@ -120,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         return buttons;
     }
 
-    private RadioButton getSelectedRadioButton(RadioGroup group) {
+    private RadioButton getSelectedRadioButton() {
         int id = answerButtons.getCheckedRadioButtonId();
         return (RadioButton) answerButtons.findViewById(id);
     }

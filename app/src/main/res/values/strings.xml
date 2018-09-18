@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Addition Quiz App</string>
+    <string name="submitButtonText">Submit Your Answer</string>
+    <string name="nextButtonText">Next Question</string>
+    <string name="whatIs">What is</string>
+    <string name="questionPlaceholderText">48 + 12?</string>
 </resources>
