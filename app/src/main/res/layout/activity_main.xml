@@ -10,18 +10,19 @@
         android:id="@+id/questionPrompt"
         android:layout_width="wrap_content"
         android:layout_height="87dp"
+        android:layout_marginTop="8dp"
         android:text="48 + 12?"
         android:textSize="64sp"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="102dp"
+        app:layout_constraintTop_toBottomOf="@+id/whatIsText"
         tools:text="48 + 12?" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="362dp"
-        android:layout_height="303dp"
+        android:layout_width="329sp"
+        android:layout_height="303sp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
