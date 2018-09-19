@@ -13,7 +13,7 @@ class Question {
 
     public void generateQuestion() {
         int min = 5;
-        int max = 100;
+        int max = 50;
         addends = new int[] { random.nextInt(max + 1 - min) + min, random.nextInt(max + 1 - min) + min };
         correctAnswer = addends[0] + addends[1];
         answers.set(0, correctAnswer);

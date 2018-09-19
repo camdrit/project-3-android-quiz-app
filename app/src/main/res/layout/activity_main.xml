@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="87dp"
         android:layout_marginTop="8dp"
         android:text="@string/questionPlaceholderText"
+        android:textColor="@color/colorPrimaryText"
         android:textSize="64sp"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -32,27 +34,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/questionPrompt">
 
-        <RadioButton
+        <android.support.v7.widget.AppCompatRadioButton
             android:id="@+id/answerChoice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/colorPrimaryText"
+            app:buttonTint="@color/colorPrimaryText"
             android:textSize="30sp"
             tools:text="60" />
 
-        <RadioButton
+        <android.support.v7.widget.AppCompatRadioButton
             android:id="@+id/answerChoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/colorPrimaryText"
+            app:buttonTint="@color/colorPrimaryText"
             android:textSize="30sp"
             tools:text="54" />
 
-        <RadioButton
+        <android.support.v7.widget.AppCompatRadioButton
             android:id="@+id/answerChoice3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/colorPrimaryText"
+            app:buttonTint="@color/colorPrimaryText"
             android:textSize="30sp"
             tools:text="4812" />
     </RadioGroup>
@@ -91,6 +99,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/whatIs"
+        android:textColor="@color/colorPrimaryText"
         android:textSize="64sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
