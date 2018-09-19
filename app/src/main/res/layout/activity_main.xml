@@ -40,8 +40,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="@color/colorPrimaryText"
-            app:buttonTint="@color/colorPrimaryText"
             android:textSize="30sp"
+            app:buttonTint="@color/colorPrimaryText"
             tools:text="60" />
 
         <android.support.v7.widget.AppCompatRadioButton
@@ -50,8 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="@color/colorPrimaryText"
-            app:buttonTint="@color/colorPrimaryText"
             android:textSize="30sp"
+            app:buttonTint="@color/colorPrimaryText"
             tools:text="54" />
 
         <android.support.v7.widget.AppCompatRadioButton
@@ -60,18 +60,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="@color/colorPrimaryText"
-            app:buttonTint="@color/colorPrimaryText"
             android:textSize="30sp"
+            app:buttonTint="@color/colorPrimaryText"
             tools:text="4812" />
     </RadioGroup>
 
     <Button
         android:id="@+id/submitButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:background="@android:color/white"
         android:enabled="false"
         android:text="@string/submitButtonText"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -80,11 +78,9 @@
 
     <Button
         android:id="@+id/nextButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:background="@android:color/white"
         android:text="@string/nextButtonText"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"

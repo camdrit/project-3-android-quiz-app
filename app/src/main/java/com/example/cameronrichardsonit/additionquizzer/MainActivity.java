@@ -2,13 +2,11 @@ package com.example.cameronrichardsonit.additionquizzer;
 
 import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatRadioButton;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -117,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
             int choiceNum = Integer.parseInt(choice.getText().toString());
             if (choiceNum == question.getCorrectAnswer()) {
                 choice.setSupportButtonTintList(correctAnswerColors);
+                choice.setTextColor(getResources().getColor(R.color.correctAnswerColor));
 
             } else if (choice.isChecked()) {
                 choice.setSupportButtonTintList(incorrectAnswerColors);
@@ -129,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<AppCompatRadioButton> choices = getRadioButtons(answerButtons);
         for (AppCompatRadioButton choice : choices) {
             choice.setSupportButtonTintList(defaultAnswerColors);
+            choice.setTextColor(getResources().getColor(R.color.colorPrimaryText));
 
         }
         answerButtons.clearCheck();
